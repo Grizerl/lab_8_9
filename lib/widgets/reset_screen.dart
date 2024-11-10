@@ -47,6 +47,18 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                             fontSize: 13,
                             color: Colors.black,
                           ),
+                          enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.blue),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.blue, width: 2.0),
+                          ),
+                          errorBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.red),
+                          ),
+                          focusedErrorBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.red, width: 2.0),
+                          ),
                         ),
                         keyboardType: TextInputType.emailAddress,
                         validator: _validateEmail,
